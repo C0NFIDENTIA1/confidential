@@ -6,6 +6,7 @@ import CharaUA from './chara_ua'
 import CharaMember from './chara_member'
 import CharaWanted from './chara_wanted'
 import ArticleWrapper from '../components/articleWrapper'
+import { window } from 'ssr-window'
 
 const Character = (props) => {
   const [checkedTab, setCheckedTab] = React.useState("tab1")

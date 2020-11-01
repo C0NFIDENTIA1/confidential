@@ -6,6 +6,7 @@ import CS_G from "../images/CS_G.png"
 import Lightbox from "react-awesome-lightbox";
 import "react-awesome-lightbox/build/style.css";
 import ArticleWrapper from '../components/articleWrapper'
+import { window } from 'ssr-window'
 
 const Material = (props) => {
 

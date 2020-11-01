@@ -4,6 +4,7 @@ import "../assets/scss/world.scss"
 import Organization from "./organization"
 import Place from "./place"
 import ArticleWrapper from '../components/articleWrapper'
+import { window } from 'ssr-window'
 
 const World = (props) => {
   const [checkedTab, setCheckedTab] = React.useState("tab1_world")

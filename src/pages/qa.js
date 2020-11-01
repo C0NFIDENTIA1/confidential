@@ -1,6 +1,7 @@
 import React from "react"
 import "../assets/scss/contents.scss"
 import ArticleWrapper from '../components/articleWrapper'
+import { window } from 'ssr-window'
 
 const Qa = (props) => {
   const currentPath = window.location.pathname
