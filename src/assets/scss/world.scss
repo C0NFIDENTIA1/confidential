@@ -1,0 +1,50 @@
+.p_bold_s {
+  margin-bottom: 10px;
+  font-size: 25px;
+  font-weight: bold;
+}
+
+.p_bold {
+  font-size: 25px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.tab_item_world {
+  padding-top: 5px;
+  height: 30px;
+  width: calc(100%/2);
+  border-bottom: 3px solid #636363 ;
+  background-color: #222222;
+  text-align: center;
+  color: #fff;
+  display: block;
+  float: left;
+  font-weight: bold;
+  transition: all 0.2s ease;
+}
+.tab_item_world:hover {
+  opacity: 0.75;
+}
+input[name="tab_item_world"] {
+  display: none;
+}
+
+.tab_content_world {
+  display: none;
+  padding: 1em 1em 0;
+  clear: both;
+  overflow: hidden;
+}
+#tab1_world:checked ~ #tab1_content_world,
+#tab2_world:checked ~ #tab2_content_world {
+  display: block;
+}
+.tab_container input:checked + .tab_item_world {
+  background-color: #636363 ;
+  color: #fff;
+}
+
+input[type="radio"] + label:before {
+  display: none;
+}
