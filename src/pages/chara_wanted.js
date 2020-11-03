@@ -16,11 +16,11 @@ const CharaWanted = () => (
       犯罪の大小も問わないが、組織からの依頼は
       どんなものがくるかはわからない上に、断る
       ことはできない。<a href ="https://peing.net/ja/q/07d5f44b-7a0e-40cc-bdb7-8e634ba090e0" target="_blank" rel="noopener noreferrer">※補足</a><br/>
-      組織からは物資や金逃走や、隠蔽、安全の
+      組織からは物資や金、隠蔽、安全の
       確保など<span>様々なサポートを受けられる</span>が、
       C機関に指名手配されることで、凄腕の
       諜報員が追ってくることになる。
-      各組織からの<span>転属については<a href ="https://peing.net/ja/q/301b855f-9883-4005-b663-d7cc906e4fa4" target="_blank" rel="noopener noreferrer">こちら</a></span>を参照ください。
+      各組織からの<span>転属については<a href ="https://peing.net/ja/q/301b855f-9883-4005-b663-d7cc906e4fa4" target="_blank" rel="noopener noreferrer">こちら</a></span>を参照。
     </p>
     <h2>●証</h2>
     <p>
