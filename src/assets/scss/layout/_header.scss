@@ -14,10 +14,10 @@ body{
 
 .glitch{
   color:white;
-  font-size:40px;
+  font-size:3rem;
   position:relative;
-  width:300px;
-  margin:0 auto;
+  width: 340px;
+  margin: 0 auto;
 }
 @keyframes noise-anim{
   $steps:20;
@@ -29,6 +29,7 @@ body{
 }
 .glitch:after{
   content:attr(data-text);
+  width: 340px;
   position:absolute;
   left:0px;
   text-shadow:-1px 0 red;
@@ -49,6 +50,7 @@ body{
   }
 }
 .glitch:before{
+  width: 340px;
   content:attr(data-text);
   position:absolute;
   left:-2px;

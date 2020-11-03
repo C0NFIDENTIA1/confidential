@@ -82,6 +82,10 @@ input[type="radio"] + label:before {
   display: none;
 }
 
+input[type="checkbox"] + label, input[type="radio"] + label {
+  font-size: 10px;
+}
+
 
 p {
   margin: 10px 0 20px;
