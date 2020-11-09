@@ -9,6 +9,8 @@ import logo_C from "../images/logo_C.png"
 import logo_F from "../images/logo_F.png"
 import logo_UA from "../images/logo_UA.png"
 import logo_G from "../images/logo_G.png"
+import rerationship from "../images/rerationship.png"
+import rerationship_penetrate from "../images/rerationship_penetrate.png"
 
 const MaterialContent = (props) => {
   return (
@@ -24,6 +26,11 @@ const MaterialContent = (props) => {
         <p>・Ghost 構成員 / 指名手配犯</p>
         <p>ダウンロード：<a href={CS_G_penetrate} download="CS_Ghost_透過">透過png</a> / <a href={CS_G} download="CS_Ghost">背景あり</a></p>
         <img id="CS_G" src={CS_G} onClick={props.onClickImage} />
+      </span>
+      <h2>関係募集シート</h2>
+      <span className="image main">
+      <p>ダウンロード：<a href={rerationship_penetrate} download="関係募集シート_透過">透過png</a> / <a href={rerationship} download="関係募集シート">背景あり</a></p>
+        <img id="rerationship" src={rerationship} onClick={props.onClickImage} /><br/>
       </span>
       <h2>素材</h2>
       <p>当企画に関する作品内であれば使用可能です。個人利用の場合のみグッズなどにもご利用いただけます。素材の著作権は企画主催者にあります。</p>

@@ -3,6 +3,7 @@ import MaterialContent from './material_content'
 import CS_info from "../images/CS_info.png"
 import CS_C from "../images/CS_C.png"
 import CS_G from "../images/CS_G.png"
+import rerationship from "../images/rerationship.png"
 import Lightbox from "react-awesome-lightbox";
 import "react-awesome-lightbox/build/style.css";
 import ArticleWrapper from '../components/articleWrapper'
@@ -14,6 +15,7 @@ const Material = (props) => {
     "CS_info": CS_info,
     "CS_C": CS_C,
     "CS_G": CS_G,
+    "rerationship": rerationship,
   }
   const [isDisplayLightbox, setIsDisplayLightbox] = React.useState(false)
   const [selectedImage, setSelectedImage] = React.useState("")
