@@ -13,10 +13,10 @@ const Character = (props) => {
   const onClickTab = (e) => setCheckedTab(e.target.id)
 
   const currentPath = window.location.pathname
-  const matchPathname = currentPath === "/character"
+  const matchPathname = currentPath === "/character/"
   const isActive = matchPathname || props.article === "character"
   const isTimeout = matchPathname || props.timeout
-  const isAeticleTimeout = matchPathname || props.articleTimeout
+  const isArticleTimeout = matchPathname || props.articleTimeout
 
   return (
     <ArticleWrapper 
@@ -27,7 +27,7 @@ const Character = (props) => {
         timeout={props.timeout}
         isActive={isActive}
         isTimeout={isTimeout}
-        isAeticleTimeout={isAeticleTimeout}
+        isArticleTimeout={isArticleTimeout}
         matchPathname={matchPathname}
       >
       <div className="title">

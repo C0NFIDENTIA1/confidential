@@ -5,10 +5,10 @@ import { window } from 'ssr-window'
 
 const Qa = (props) => {
   const currentPath = window.location.pathname
-  const matchPathname = currentPath === "/qa"
+  const matchPathname = currentPath === "/qa/"
   const isActive = matchPathname || props.article === "qa"
   const isTimeout = matchPathname || props.timeout
-  const isAeticleTimeout = matchPathname || props.articleTimeout
+  const isArticleTimeout = matchPathname || props.articleTimeout
 
   return (
     <ArticleWrapper 
@@ -19,7 +19,7 @@ const Qa = (props) => {
       timeout={props.timeout}
       isActive={isActive}
       isTimeout={isTimeout}
-      isAeticleTimeout={isAeticleTimeout}
+      isArticleTimeout={isArticleTimeout}
       matchPathname={matchPathname}
     >
       <h2 className="major">Q&A</h2>

@@ -29,10 +29,16 @@ const Material = (props) => {
   }
 
   const currentPath = window.location.pathname
-  const matchPathname = currentPath === "/material"
+  const matchPathname = currentPath === "/material/"
   const isActive = matchPathname || props.article === "material"
   const isTimeout = matchPathname || props.timeout
-  const isAeticleTimeout = matchPathname || props.articleTimeout
+  const isArticleTimeout = matchPathname || props.articleTimeout
+
+  console.log(`passname: ${window.location.pathname}`)
+  console.log(`isMatchPassname: ${matchPathname}`)
+  console.log(`isTimeout: ${isTimeout}`)
+  console.log(`isActive: ${isActive}`)
+  console.log(`isArticleTimeout: ${isArticleTimeout}`)
 
   return (
     <div>
@@ -44,7 +50,7 @@ const Material = (props) => {
         timeout={props.timeout}
         isActive={isActive}
         isTimeout={isTimeout}
-        isAeticleTimeout={isAeticleTimeout}
+        isArticleTimeout={isArticleTimeout}
         matchPathname={matchPathname}
       >
         <MaterialContent onClickImage={onClickImage} />

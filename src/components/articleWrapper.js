@@ -24,7 +24,7 @@ const ArticleWrapper = (props) => {
         <article
           id={props.article}
           className={`${props.isActive ? 'active' : ''} ${
-            props.isAeticleTimeout ? 'timeout' : ''
+            props.isArticleTimeout ? 'timeout' : ''
           }`}
           style={{ display: 'none' }}
         >
