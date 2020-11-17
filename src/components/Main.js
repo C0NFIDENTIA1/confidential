@@ -4,6 +4,7 @@ import World from '../pages/world'
 import First from '../pages/first'
 import Qa from '../pages/qa'
 import Material from '../pages/material'
+import Event from '../pages/event'
 
 const Main = (props) => {
   
@@ -24,6 +25,13 @@ const Main = (props) => {
         timeout={props.timeout}
       />
       <Character 
+        onCloseArticle={props.onCloseArticle}
+        article={props.article}
+        articleTimeout={props.articleTimeout}
+        setWrapperRef={props.setWrapperRef}
+        timeout={props.timeout}
+      />
+      <Event 
         onCloseArticle={props.onCloseArticle}
         article={props.article}
         articleTimeout={props.articleTimeout}
