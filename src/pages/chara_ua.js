@@ -4,7 +4,7 @@ import "../assets/scss/contents.scss"
 const CharaUA = () => (
   <div>
     <p className="p_bold">Unknown Agent所属</p>
-    タグ：<a href="https://twitter.com/intent/tweet?hashtags=CONF_CS, CONF_UA" className="twitter-hashtags-btn" target="_blank">#CONF_CS #CONF_UA</a>
+    タグ：<a href="https://twitter.com/intent/tweet?hashtags=CONF_CS,CONF_UA" className="twitter-hashtags-btn" target="_blank">#CONF_CS #CONF_UA</a>
     <div className="character_head">
       <span className="icon-logo-UA"></span>
       <p><span className="hi_light">【CS記載事項】<br/>・名前 (偽名/コードネーム可）<br/>・年齢 (24 ~ 60歳)<br/>・性別 (男/女)<br/>・身長</span></p>

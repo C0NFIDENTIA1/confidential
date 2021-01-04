@@ -4,7 +4,7 @@ import "../assets/scss/contents.scss"
 const CharaF = () => (
   <div>
     <h1>F UNIT所属</h1>
-    タグ：<a href="https://twitter.com/intent/tweet?hashtags=CONF_CS, CONF_F" className="twitter-hashtags-btn" target="_blank">#CONF_CS #CONF_F</a>
+    タグ：<a href="https://twitter.com/intent/tweet?hashtags=CONF_CS,CONF_F" className="twitter-hashtags-btn" target="_blank">#CONF_CS #CONF_F</a>
     <div className="character_head">
       <span className="icon-logo-F"></span>
       <p><span>【CS記載事項】<br/>・名前 (偽名/コードネーム可）<br/>・年齢 (20 ~ 60歳)<br/>・性別 (男/女)<br/>・身長</span></p>

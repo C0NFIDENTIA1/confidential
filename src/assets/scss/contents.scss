@@ -34,7 +34,8 @@
     }
     .icon-logo-UA,
     .icon-logo-G,
-    .icon-logo_G_outline {
+    .icon-logo_G_outline,
+    .icon-logo-Collard {
       flex-basis:auto;
       font-size: 80px;
       margin: auto;
@@ -43,8 +44,8 @@
 }
 .tab_item {
   padding-top: 5px;
-  height: 30px;
-  width: calc(100%/4);
+  height: 50px;
+  width: calc(100%/5);
   border-bottom: 3px solid #636363 ;
   background-color: #222222;
   text-align: center;
@@ -70,7 +71,8 @@ input[name="tab_item"] {
 #tab1:checked ~ #tab1_content,
 #tab2:checked ~ #tab2_content,
 #tab3:checked ~ #tab3_content,
-#tab4:checked ~ #tab4_content {
+#tab4:checked ~ #tab4_content,
+#tab5:checked ~ #tab5_content {
   display: block;
 }
 .tab_container input:checked + .tab_item {
@@ -83,7 +85,7 @@ input[type="radio"] + label:before {
 }
 
 input[type="checkbox"] + label, input[type="radio"] + label {
-  font-size: 10px;
+  font-size: 30px;
 }
 
 

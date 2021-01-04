@@ -5,7 +5,7 @@ import headG from '../images/head_g.jpg'
 const CharaMember = () => (
   <div>
     <h1>構成員</h1>
-    タグ：<a href="https://twitter.com/intent/tweet?hashtags=CONF_CS, CONF_構成員" className="twitter-hashtags-btn" target="_blank">#CONF_CS #CONF_構成員</a>
+    タグ：<a href="https://twitter.com/intent/tweet?hashtags=CONF_CS,CONF_構成員" className="twitter-hashtags-btn" target="_blank">#CONF_CS #CONF_構成員</a>
     <div className="character_head">
       <span className="icon-logo-G"></span>
       <p>

@@ -5,7 +5,7 @@ import headG from '../images/head_g.jpg'
 const CharaWanted = () => (
   <div>
     <h1>指名手配犯</h1>
-    タグ：<a href="https://twitter.com/intent/tweet?hashtags=CONF_CS, CONF_指名手配犯" className="twitter-hashtags-btn" target="_blank">#CONF_CS #CONF_指名手配犯</a>
+    タグ：<a href="https://twitter.com/intent/tweet?hashtags=CONF_CS,CONF_指名手配犯" className="twitter-hashtags-btn" target="_blank">#CONF_CS #CONF_指名手配犯</a>
     <div className="character_head">
       <span className="icon-logo_G_outline"></span>
       <p><span>【CS記載事項】<br/>・名前 (偽名/コードネーム可）<br/>・年齢 (意思疎通ができ、<br/>組織に何らかの貢献ができる程度)<br/>・性別 (男/女)<br/>・身長<br/>・どのような犯罪者か</span></p>
