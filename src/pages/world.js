@@ -29,7 +29,7 @@ const World = (props) => {
       matchPathname={matchPathname}
     >
       <div className="title">
-        <h2 className="major">世界観</h2>
+        <h2 className="majo">世界観</h2>
         <span className="image main">
         <img src={headWorld} alt="" />
         </span>

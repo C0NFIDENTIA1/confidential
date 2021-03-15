@@ -46,6 +46,12 @@ const Organization = () => (
       多く、情報戦や潜入を得意とする。</span>
       組織の設立は第一次世界大戦後。今から約100年前。
     </p>
+    <h2>・Collared</h2>
+    <p>
+      逮捕したGhostに捜査協力をさせるための仕組み。
+      制度として確立したのは10年ほど前。
+      機関設立当初から実験的に捕まえたghostを使った捜査なども行われており、それを仕組み化したものが現在のCollaredである。
+    </p>
     <div className="border"></div>
     <p className="p_bold">●犯罪組織Ghost</p>
     <p>

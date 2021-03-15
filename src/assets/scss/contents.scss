@@ -35,7 +35,8 @@
     .icon-logo-UA,
     .icon-logo-G,
     .icon-logo_G_outline,
-    .icon-logo-Collard {
+    .icon-logo-Collard,
+    .icon-logo-G_leader {
       flex-basis:auto;
       font-size: 80px;
       margin: auto;
@@ -45,7 +46,7 @@
 .tab_item {
   padding-top: 5px;
   height: 50px;
-  width: calc(100%/5);
+  width: calc(100%/6);
   border-bottom: 3px solid #636363 ;
   background-color: #222222;
   text-align: center;
@@ -72,7 +73,8 @@ input[name="tab_item"] {
 #tab2:checked ~ #tab2_content,
 #tab3:checked ~ #tab3_content,
 #tab4:checked ~ #tab4_content,
-#tab5:checked ~ #tab5_content {
+#tab5:checked ~ #tab5_content,
+#tab6:checked ~ #tab6_content {
   display: block;
 }
 .tab_container input:checked + .tab_item {

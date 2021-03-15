@@ -8,6 +8,8 @@ import CharaWanted from './chara_wanted'
 import ArticleWrapper from '../components/articleWrapper'
 import { window } from 'ssr-window'
 import CharaCollared from "./chara_collared"
+import CharaLeader from "./chara_leader"
+import CommingSoon from "./comming_soon"
 
 const Character = (props) => {
   const [checkedTab, setCheckedTab] = React.useState("tab1")
@@ -63,6 +65,11 @@ const Character = (props) => {
           checked={checkedTab === "tab5"}
         />
         <label className="tab_item" htmlFor="tab5"><span className="icon-logo-Collard"></span></label>
+        <input id="tab6" type="radio" name="tab_item"
+          onClick={onClickTab}
+          checked={checkedTab === "tab6"}
+        />
+        <label className="tab_item" htmlFor="tab6"><span className="icon-logo-G_leader"></span></label>
         <div className="tab_content" id="tab1_content">
           <div className="tab_content_description">
             <CharaF />
@@ -86,6 +93,11 @@ const Character = (props) => {
         <div className="tab_content" id="tab5_content">
           <div className="tab_content_description">
             <CharaCollared />
+          </div>
+        </div>
+        <div className="tab_content" id="tab6_content">
+          <div className="tab_content_description">
+            <CommingSoon />
           </div>
         </div>
       </div>
