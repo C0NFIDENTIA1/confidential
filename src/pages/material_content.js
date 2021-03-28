@@ -12,8 +12,11 @@ import logo_F from "../images/logo_F.png"
 import logo_UA from "../images/logo_UA.png"
 import logo_G from "../images/logo_G.png"
 import logo_Collared from "../images/logo_Collared.png"
+import logo_G_leader from "../images/logo_G_leader.png"
 import rerationship from "../images/rerationship.png"
 import rerationship_penetrate from "../images/rerationship_penetrate.png"
+import wanted from "../images/wanted.png"
+import wanted_penetrate from "../images/wanted_penetrate.png"
 
 const MaterialContent = (props) => {
   return (
@@ -26,17 +29,22 @@ const MaterialContent = (props) => {
         <p>・C機関 F UNIT / Unknown Agent</p>
         <p>ダウンロード：<a href={CS_C_penetrate} download="CS_C_透過">透過png</a> / <a href={CS_C} download="CS_C">背景あり</a></p>
         <img id="CS_C" src={CS_C} onClick={props.onClickImage} /><br/>
-        <p>・Ghost 構成員 / 指名手配犯</p>
+        <p>・Ghost 構成員 / 指名手配犯 / 幹部</p>
         <p>ダウンロード：<a href={CS_G_penetrate} download="CS_Ghost_透過">透過png</a> / <a href={CS_G} download="CS_Ghost">背景あり</a></p>
         <img id="CS_G" src={CS_G} onClick={props.onClickImage} />
         <p>・C機関 Collared</p>
-        <p>ダウンロード：<a href={CS_Collared_penetrate} download="CS_Ghost_透過">透過png</a> / <a href={CS_Collared} download="CS_Ghost">背景あり</a></p>
+        <p>ダウンロード：<a href={CS_Collared_penetrate} download="CS_Collared_透過">透過png</a> / <a href={CS_Collared} download="CS_Collared">背景あり</a></p>
         <img id="CS_Collared" src={CS_Collared} onClick={props.onClickImage} />
       </span>
       <h2>関係募集シート</h2>
       <span className="image main">
       <p>ダウンロード：<a href={rerationship_penetrate} download="関係募集シート_透過">透過png</a> / <a href={rerationship} download="関係募集シート">背景あり</a></p>
         <img id="rerationship" src={rerationship} onClick={props.onClickImage} /><br/>
+      </span>
+      <h2>組員募集シート</h2>
+      <span className="image main">
+      <p>ダウンロード：<a href={wanted_penetrate} download="組員募集シート_透過">透過png</a> / <a href={wanted} download="組員募集シート">背景あり</a></p>
+        <img id="rerationship" src={wanted} onClick={props.onClickImage} /><br/>
       </span>
       <h2>素材</h2>
       <p>当企画に関する作品内であれば使用可能です。個人利用の場合のみグッズなどにもご利用いただけます。素材の著作権は企画主催者にあります。</p>
@@ -49,7 +57,9 @@ const MaterialContent = (props) => {
       <img className="logoImage" src={logo_G} />
       ダウンロード：<a href={logo_G} download="logo_G">透過png</a><br/>
       <img className="logoImage" src={logo_Collared} />
-      ダウンロード：<a href={logo_Collared} download="logo_Collared">透過png</a>
+      ダウンロード：<a href={logo_Collared} download="logo_Collared">透過png</a><br/>
+      <img className="logoImage" src={logo_G_leader} />
+      ダウンロード：<a href={logo_G_leader} download="logo_幹部">透過png</a>
     </div>
   )
 }
