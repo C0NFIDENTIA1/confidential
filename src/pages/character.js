@@ -97,7 +97,7 @@ const Character = (props) => {
         </div>
         <div className="tab_content" id="tab6_content">
           <div className="tab_content_description">
-            <CommingSoon />
+            <CharaLeader />
           </div>
         </div>
       </div>
