@@ -1,0 +1,99 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+    <title>Yoo look good</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+    <meta name="robots" content="noindex">
+    <link rel="stylesheet" href="assets/css/main.css" />
+    <link rel="stylesheet" href="assets/css/lightbox.css">
+</head>
+
+<body class="is-preload">
+    <script type="module">
+        import { initializeApp } from "https://www.gstatic.com/firebasejs/9.9.4/firebase-app.js";
+        import { getAnalytics } from "https://www.gstatic.com/firebasejs/9.9.4/firebase-analytics.js";
+
+        const firebaseConfig = {
+            apiKey: "AIzaSyBRfRzKeFjf6zZAXTGi_A75MUtQoTiS00E",
+            authDomain: "rxh-ylg.firebaseapp.com",
+            projectId: "rxh-ylg",
+            storageBucket: "rxh-ylg.appspot.com",
+            messagingSenderId: "327392555562",
+            appId: "1:327392555562:web:8c89dcc0b8eb3f29dd4953",
+            measurementId: "G-FKXTTMGZKZ"
+        };
+
+        const app = initializeApp(firebaseConfig);
+        const analytics = getAnalytics(app);
+    </script>
+
+    <!-- Header -->
+    <section class="main special">
+        <div class="container">
+            <div class="content">
+                <header class="major">
+                    <h1>YOU lOOK GOOD</h1>
+                </header>
+                <sub>
+                    こちらは個人が主催する<br>
+                    某飛行機乗り映画の非公式ファンブック告知サイトです。<br>
+                    制作・版権元各位とは一切関係ありません。
+                </sub>
+            </div>
+
+            <form id="form" class="content">
+                <sub>
+                    pass: 英語表記CP名 (8文字) + マッハ目標速度 (2文字)<br>
+                    h○○○○○○r○○
+                </sub>
+                <div class="row gtr-uniform">
+                    <div class="col-12">
+                        <input type="password" name="password" id="password" />
+                    </div>
+                    <div class="col-12">
+                        <input type="submit" value="sign in" class="primary" />
+                    </div>
+                </div>
+            </form>
+        </div>
+    </section>
+
+    <!-- Scripts -->
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/jquery.scrollex.min.js"></script>
+    <script src="assets/js/jquery.scrolly.min.js"></script>
+    <script src="assets/js/browser.min.js"></script>
+    <script src="assets/js/breakpoints.min.js"></script>
+    <script src="assets/js/util.js"></script>
+    <script src="assets/js/main.js"></script>
+    <script src="assets/js/lightbox.js"></script>
+
+    <script type="module">
+        import { getAuth, signInWithEmailAndPassword, onAuthStateChanged } from "https://www.gstatic.com/firebasejs/9.9.4/firebase-auth.js";
+        const auth = getAuth();
+
+        onAuthStateChanged(auth, (user) => {
+            if (user) {
+                location.href = "/index.html";
+            }
+        })
+
+        const form = document.getElementById("form");
+
+        form.addEventListener("submit", (e) => {
+            e.preventDefault();
+
+            const email = "user@rxh-ylg.tk";
+            const password = document.getElementById("password").value;
+
+            signInWithEmailAndPassword(auth, email, password)
+                .catch((error) => {
+                    console.error(error.code, error.message);
+                });
+        })
+    </script>
+</body>
+
+</html>

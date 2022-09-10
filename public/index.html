@@ -5,29 +5,60 @@
 	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 -->
 <html>
-	<head>
-		<title>Yoo look good</title>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-		<link rel="stylesheet" href="assets/css/main.css" />
-		<link rel="stylesheet" href="assets/css/lightbox.css">
-	</head>
-	<body class="is-preload">
 
-		<!-- Header -->
-			<section id="header">
-				<header class="major">
-					<h1>YOU lOOK GOOD</h1>
-					<p>
-						R / H<br>
-						unofficial anthology
-					</p>
-					<sub>
-						個人が主催する非公式ファンブック告知サイトです。<br>
-						制作・版権元各位とは一切関係ありません。
-					</sub>
-				</header>
-				<!-- <div class="container">
+<head>
+	<title>Yoo look good</title>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+	<meta name="robots" content="noindex">
+	<link rel="stylesheet" href="assets/css/main.css" />
+	<link rel="stylesheet" href="assets/css/lightbox.css">
+</head>
+
+<body class="is-preload">
+	<script type="module">
+		import { initializeApp } from "https://www.gstatic.com/firebasejs/9.9.4/firebase-app.js";
+		import { getAnalytics } from "https://www.gstatic.com/firebasejs/9.9.4/firebase-analytics.js";
+		import { getAuth, onAuthStateChanged } from "https://www.gstatic.com/firebasejs/9.9.4/firebase-auth.js";
+
+		const firebaseConfig = {
+			apiKey: "AIzaSyBRfRzKeFjf6zZAXTGi_A75MUtQoTiS00E",
+			authDomain: "rxh-ylg.firebaseapp.com",
+			projectId: "rxh-ylg",
+			storageBucket: "rxh-ylg.appspot.com",
+			messagingSenderId: "327392555562",
+			appId: "1:327392555562:web:8c89dcc0b8eb3f29dd4953",
+			measurementId: "G-FKXTTMGZKZ"
+		};
+
+		const app = initializeApp(firebaseConfig);
+		const analytics = getAnalytics(app);
+
+		const auth = getAuth();
+		const user = auth.currentUser;
+
+		onAuthStateChanged(auth, (user) => {
+			if (!user) {
+				console.log("missed session");
+				location.href = "/signin.html"
+			}
+		})
+	</script>
+
+	<!-- Header -->
+	<section id="header">
+		<header class="major">
+			<h1>YOU lOOK GOOD</h1>
+			<p>
+				R / H<br>
+				unofficial anthology
+			</p>
+			<sub>
+				個人が主催する非公式ファンブック告知サイトです。<br>
+				制作・版権元各位とは一切関係ありません。
+			</sub>
+		</header>
+		<!-- <div class="container">
 					<ul class="actions special">
 						<li>
 							<a href="#one" class="button primary scrolly">about</a>
@@ -36,139 +67,144 @@
 						</li>
 					</ul>
 				</div> -->
-			</section>
+	</section>
 
-		<!-- One -->
-			<section id="one" class="main special">
-				<div class="container">
-					<ul class="actions special">
-						<li>
-							<a href="#one" class="button primary scrolly">about</a>
-							<a href="#two" class="button primary scrolly">member</a>
-							<a href="#footer" class="button primary scrolly">contact</a>
-						</li>
-					</ul>
-					<h5>Log</h5>
-							<div class="table-wrapper">
-								<table>
-									<tbody>
-										<tr>
-											<td><b>20xx / xx / xx</b></td>
-											<td>サイト公開</td>
-										</tr>
-										<tr>
-											<td><b>20xx / xx / xx</b></td>
-											<td>サイト公開</td>
-										</tr>
-										<tr>
-											<td><b>20xx / xx / xx</b></td>
-											<td>サイト公開</td>
-										</tr>
-									</tbody>
-								</table>
-							</div>
-					<div class="content">
-						<header class="major">
-							<h2>ABOUT</h2>
-						</header>
-						<h2>「You look good」</h2>
-						<p>
-							R×H非公式アンソロジー<br>
-							R-18（全年齢作品含む）
-						</p>
-						<span class="image fit primary"><img src="images/pic01.jpg" alt="" /></span>
-						<div class="box alt">
-							<div class="row gtr-uniform gtr-50 gallery">
-								<div class="col-12"><span class="image fit"><img src="images/pic04.jpg" alt="" /></span></div>
-								<div class="col-4"><a href="images/bg.jpg" data-lightbox="group-a"><span class="image fit"><img src="images/pic04.jpg" alt="" /></span></a></div>
-								<div class="col-4"><a href="images/bg.jpg" data-lightbox="group-a"><span class="image fit"><img src="images/pic04.jpg" alt="" /></span></a></div>
-								<div class="col-4"><a href="images/bg.jpg" data-lightbox="group-a"><span class="image fit"><img src="images/pic04.jpg" alt="" /></span></a></div>
-								<div class="col-4"><a href="images/bg.jpg" data-lightbox="group-a"><span class="image fit"><img src="images/pic04.jpg" alt="" /></span></a></div>
-							</div>
+	<!-- One -->
+	<section id="one" class="main special">
+		<div class="container">
+			<ul class="actions special">
+				<li>
+					<a href="#one" class="button primary scrolly">about</a>
+					<a href="#two" class="button primary scrolly">member</a>
+					<a href="#footer" class="button primary scrolly">contact</a>
+				</li>
+			</ul>
+			<h5>Log</h5>
+			<div class="table-wrapper">
+				<table>
+					<tbody>
+						<tr>
+							<td><b>20xx / xx / xx</b></td>
+							<td>サイト公開</td>
+						</tr>
+						<tr>
+							<td><b>20xx / xx / xx</b></td>
+							<td>サイト公開</td>
+						</tr>
+						<tr>
+							<td><b>20xx / xx / xx</b></td>
+							<td>サイト公開</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+			<div class="content">
+				<header class="major">
+					<h2>ABOUT</h2>
+				</header>
+				<h2>「You look good」</h2>
+				<p>
+					R×H非公式アンソロジー<br>
+					R-18（全年齢作品含む）
+				</p>
+				<span class="image fit primary"><img src="images/pic01.jpg" alt="" /></span>
+				<div class="box alt">
+					<div class="row gtr-uniform gtr-50 gallery">
+						<div class="col-12"><span class="image fit"><img src="images/pic04.jpg" alt="" /></span>
 						</div>
-						<p>
-							Ax / オフセット / xxxP / xxxx円	<br>	
-							発行日：xxxx年xx月xx日	
-						</p>
-						<p>
-							主催：xxx <a href="#" class="icon brands fa-twitter"><span class="label">Twitter</span></a><br>
-							告知用アカウント：xxx <a href="#" class="icon brands fa-twitter"><span class="label">Twitter</span></a>
-						</p>
-					<a href="#two" class="goto-next scrolly">Next</a>
-				</div>
-			</section>
-
-		<!-- Two -->
-			<section id="two" class="main special">
-				<div class="container">
-					<span class="image fit primary"><img src="images/pic02.jpg" alt="" /></span>
-					<div class="content">
-						<header class="major">
-							<h2>MEMBER</h2>
-							<p>五十音順・敬称略</p>
-						</header>
-						<h3>comic</h3>
-						<!-- <p>Consequat sed ultricies rutrum. Sed adipiscing eu amet interdum lorem blandit vis ac commodo aliquet vulputate.</p> -->
-						<ul class="icons-grid">
-							<li>
-								<h3>hi</h3><a href="#">twitter</a> / <a href="#">pixiv</a> / <a href="#">booth</a></p>
-							</li>
-							<li>
-								<h3>hoge</h3><a href="#">twitter</a> / <a href="#">pixiv</a></p>
-							</li>
-							<li>
-								<h3>fuga</h3><a href="#">twitter</a> / <a href="#">pixiv</a></p>
-							</li>
-							<li>
-								<h3>waaaaaa</h3><a href="#">twitter</a> / <a href="#">pixiv</a></p>
-							</li>
-							<li>
-								<h3>hi</h3><a href="#">twitter</a> / <a href="#">pixiv</a> / <a href="#">booth</a></p>
-							</li>
-							<li>
-								<h3>hoge</h3><a href="#">twitter</a> / <a href="#">pixiv</a></p>
-							</li>
-							<li>
-								<h3>fuga</h3><a href="#">twitter</a> / <a href="#">pixiv</a></p>
-							</li>
-							<li>
-								<h3>waaaaaa</h3><a href="#">twitter</a> / <a href="#">pixiv</a></p>
-							</li>
-						</ul>
-						<h3>novel</h3>
-						<ul class="icons-grid">
-							<li>
-								<h3>hi</h3><a href="#">twitter</a> / <a href="#">pixiv</a> / <a href="#">booth</a></p>
-							</li>
-							<li>
-								<h3>hoge</h3><a href="#">twitter</a> / <a href="#">pixiv</a></p>
-							</li>
-							<li>
-								<h3>fuga</h3><a href="#">twitter</a> / <a href="#">pixiv</a></p>
-							</li>
-							<li>
-								<h3>waaaaaa</h3><a href="#">twitter</a> / <a href="#">pixiv</a></p>
-							</li>
-							<li>
-								<h3>hi</h3><a href="#">twitter</a> / <a href="#">pixiv</a> / <a href="#">booth</a></p>
-							</li>
-							<li>
-								<h3>hoge</h3><a href="#">twitter</a> / <a href="#">pixiv</a></p>
-							</li>
-							<li>
-								<h3>fuga</h3><a href="#">twitter</a> / <a href="#">pixiv</a></p>
-							</li>
-							<li>
-								<h3>waaaaaa</h3><a href="#">twitter</a> / <a href="#">pixiv</a></p>
-							</li>
-						</ul>
+						<div class="col-4"><a href="images/bg.jpg" data-lightbox="group-a"><span class="image fit"><img
+										src="images/pic04.jpg" alt="" /></span></a></div>
+						<div class="col-4"><a href="images/bg.jpg" data-lightbox="group-a"><span class="image fit"><img
+										src="images/pic04.jpg" alt="" /></span></a></div>
+						<div class="col-4"><a href="images/bg.jpg" data-lightbox="group-a"><span class="image fit"><img
+										src="images/pic04.jpg" alt="" /></span></a></div>
+						<div class="col-4"><a href="images/bg.jpg" data-lightbox="group-a"><span class="image fit"><img
+										src="images/pic04.jpg" alt="" /></span></a></div>
 					</div>
-					<a href="#footer" class="goto-next scrolly">Next</a>
 				</div>
-			</section>
+				<p>
+					Ax / オフセット / xxxP / xxxx円 <br>
+					発行日：xxxx年xx月xx日
+				</p>
+				<p>
+					主催：xxx <a href="#" class="icon brands fa-twitter"><span class="label">Twitter</span></a><br>
+					告知用アカウント：xxx <a href="#" class="icon brands fa-twitter"><span class="label">Twitter</span></a>
+				</p>
+				<a href="#two" class="goto-next scrolly">Next</a>
+			</div>
+	</section>
 
-		<!-- Three -->
-			<!-- <section id="three" class="main special">
+	<!-- Two -->
+	<section id="two" class="main special">
+		<div class="container">
+			<span class="image fit primary"><img src="images/pic02.jpg" alt="" /></span>
+			<div class="content">
+				<header class="major">
+					<h2>MEMBER</h2>
+					<p>五十音順・敬称略</p>
+				</header>
+				<h3>comic</h3>
+				<!-- <p>Consequat sed ultricies rutrum. Sed adipiscing eu amet interdum lorem blandit vis ac commodo aliquet vulputate.</p> -->
+				<ul class="icons-grid">
+					<li>
+						<h3>hi</h3><a href="#">twitter</a> / <a href="#">pixiv</a> / <a href="#">booth</a></p>
+					</li>
+					<li>
+						<h3>hoge</h3><a href="#">twitter</a> / <a href="#">pixiv</a></p>
+					</li>
+					<li>
+						<h3>fuga</h3><a href="#">twitter</a> / <a href="#">pixiv</a></p>
+					</li>
+					<li>
+						<h3>waaaaaa</h3><a href="#">twitter</a> / <a href="#">pixiv</a></p>
+					</li>
+					<li>
+						<h3>hi</h3><a href="#">twitter</a> / <a href="#">pixiv</a> / <a href="#">booth</a></p>
+					</li>
+					<li>
+						<h3>hoge</h3><a href="#">twitter</a> / <a href="#">pixiv</a></p>
+					</li>
+					<li>
+						<h3>fuga</h3><a href="#">twitter</a> / <a href="#">pixiv</a></p>
+					</li>
+					<li>
+						<h3>waaaaaa</h3><a href="#">twitter</a> / <a href="#">pixiv</a></p>
+					</li>
+				</ul>
+				<h3>novel</h3>
+				<ul class="icons-grid">
+					<li>
+						<h3>hi</h3><a href="#">twitter</a> / <a href="#">pixiv</a> / <a href="#">booth</a></p>
+					</li>
+					<li>
+						<h3>hoge</h3><a href="#">twitter</a> / <a href="#">pixiv</a></p>
+					</li>
+					<li>
+						<h3>fuga</h3><a href="#">twitter</a> / <a href="#">pixiv</a></p>
+					</li>
+					<li>
+						<h3>waaaaaa</h3><a href="#">twitter</a> / <a href="#">pixiv</a></p>
+					</li>
+					<li>
+						<h3>hi</h3><a href="#">twitter</a> / <a href="#">pixiv</a> / <a href="#">booth</a></p>
+					</li>
+					<li>
+						<h3>hoge</h3><a href="#">twitter</a> / <a href="#">pixiv</a></p>
+					</li>
+					<li>
+						<h3>fuga</h3><a href="#">twitter</a> / <a href="#">pixiv</a></p>
+					</li>
+					<li>
+						<h3>waaaaaa</h3><a href="#">twitter</a> / <a href="#">pixiv</a></p>
+					</li>
+				</ul>
+			</div>
+			<a href="#footer" class="goto-next scrolly">Next</a>
+		</div>
+	</section>
+
+	<!-- Three -->
+	<!-- <section id="three" class="main special">
 				<div class="container">
 					<span class="image fit primary"><img src="images/pic03.jpg" alt="" /></span>
 					<div class="content">
@@ -181,8 +217,8 @@
 				</div>
 			</section> -->
 
-		<!-- Four -->
-		<!--
+	<!-- Four -->
+	<!--
 			<section id="four" class="main">
 				<div class="container">
 					<div class="content">
@@ -502,13 +538,13 @@ print 'It took ' + i + ' iterations to sort the deck.';</code></pre>
 			</section>
 		-->
 
-		<!-- Footer -->
-			<section id="footer">
-				<div class="container">
-					<header class="major">
-						<h2>CONTACT</h2>
-					</header>
-					<!-- <form method="post" action="#">
+	<!-- Footer -->
+	<section id="footer">
+		<div class="container">
+			<header class="major">
+				<h2>CONTACT</h2>
+			</header>
+			<!-- <form method="post" action="#">
 						<div class="row gtr-uniform">
 							<div class="col-6 col-12-xsmall"><input type="text" name="name" id="name" placeholder="Name" /></div>
 							<div class="col-6 col-12-xsmall"><input type="email" name="email" id="email" placeholder="Email" /></div>
@@ -520,33 +556,38 @@ print 'It took ' + i + ' iterations to sort the deck.';</code></pre>
 							</div>
 						</div>
 					</form> -->
-					<iframe src="https://docs.google.com/forms/d/e/1FAIpQLSejTLWV3_TDyW16gNgKAMgDJhw-7CWq0Goc6u7EHQrv72Bh1A/viewform?embedded=true" width="100%" height="600" frameborder="0" marginheight="0" marginwidth="0">読み込んでいます…</iframe>
-				</div>
-				<footer>
-					<div class="up-button">
-						<a href="#header" class="button small">▲</a>
-					</div>
-					<ul class="icons">
-						<li><a href="#" class="icon brands alt fa-twitter"><span class="label">Twitter</span></a></li>
-						<!-- <li><a href="#" class="icon brands alt fa-facebook-f"><span class="label">Facebook</span></a></li>
+			<iframe
+				src="https://docs.google.com/forms/d/e/1FAIpQLSejTLWV3_TDyW16gNgKAMgDJhw-7CWq0Goc6u7EHQrv72Bh1A/viewform?embedded=true"
+				width="100%" height="600" frameborder="0" marginheight="0" marginwidth="0">読み込んでいます…</iframe>
+		</div>
+		<footer>
+			<div class="up-button">
+				<a href="#header" class="button small">▲</a>
+			</div>
+			<ul class="icons">
+				<li><a href="#" class="icon brands alt fa-twitter"><span class="label">Twitter</span></a></li>
+				<!-- <li><a href="#" class="icon brands alt fa-facebook-f"><span class="label">Facebook</span></a></li>
 						<li><a href="#" class="icon brands alt fa-instagram"><span class="label">Instagram</span></a></li>
 						<li><a href="#" class="icon brands alt fa-dribbble"><span class="label">Dribbble</span></a></li>
 						<li><a href="#" class="icon solid alt fa-envelope"><span class="label">Email</span></a></li> -->
-					</ul>
-					<ul class="copyright">
-						<li>&copy; Untitled</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li><li>Demo Images: <a href="http://unsplash.com">Unsplash</a></li>
-					</ul>
-				</footer>
-			</section>
+			</ul>
+			<ul class="copyright">
+				<li>&copy; Untitled</li>
+				<li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+				<li>Demo Images: <a href="http://unsplash.com">Unsplash</a></li>
+			</ul>
+		</footer>
+	</section>
 
-		<!-- Scripts -->
-			<script src="assets/js/jquery.min.js"></script>
-			<script src="assets/js/jquery.scrollex.min.js"></script>
-			<script src="assets/js/jquery.scrolly.min.js"></script>
-			<script src="assets/js/browser.min.js"></script>
-			<script src="assets/js/breakpoints.min.js"></script>
-			<script src="assets/js/util.js"></script>
-			<script src="assets/js/main.js"></script>
-			<script src="assets/js/lightbox.js"></script>
-	</body>
+	<!-- Scripts -->
+	<script src="assets/js/jquery.min.js"></script>
+	<script src="assets/js/jquery.scrollex.min.js"></script>
+	<script src="assets/js/jquery.scrolly.min.js"></script>
+	<script src="assets/js/browser.min.js"></script>
+	<script src="assets/js/breakpoints.min.js"></script>
+	<script src="assets/js/util.js"></script>
+	<script src="assets/js/main.js"></script>
+	<script src="assets/js/lightbox.js"></script>
+</body>
+
 </html>
