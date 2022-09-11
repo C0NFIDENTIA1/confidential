@@ -2515,7 +2515,7 @@ input, select, textarea {
 		}
 
 			table tbody tr:nth-child(2n + 1) {
-				background-color: rgba(144, 144, 144, 0.075);
+				background-color: rgba(204, 204, 204, 0.075);
 			}
 
 		table td {
@@ -3147,5 +3147,9 @@ input, select, textarea {
 					padding: 0;
 				}
 
+	}
+
+	.tdHead{
+		background-color: #ebebeb;
 	}
 
