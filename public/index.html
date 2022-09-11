@@ -19,7 +19,7 @@
 	<script type="module">
 		import { initializeApp } from "https://www.gstatic.com/firebasejs/9.9.4/firebase-app.js";
 		import { getAnalytics } from "https://www.gstatic.com/firebasejs/9.9.4/firebase-analytics.js";
-		import { getAuth, onAuthStateChanged } from "https://www.gstatic.com/firebasejs/9.9.4/firebase-auth.js";
+		import { getFunctions, httpsCallable } from "https://www.gstatic.com/firebasejs/9.9.4/firebase-functions.js";
 
 		const firebaseConfig = {
 			apiKey: "AIzaSyBRfRzKeFjf6zZAXTGi_A75MUtQoTiS00E",
@@ -34,15 +34,15 @@
 		const app = initializeApp(firebaseConfig);
 		const analytics = getAnalytics(app);
 
-		const auth = getAuth();
-		const user = auth.currentUser;
-
-		onAuthStateChanged(auth, (user) => {
-			if (!user) {
-				console.log("missed session");
-				location.href = "/signin.html"
-			}
-		})
+		const functions = getFunctions(app, "asia-northeast1");
+		const id = localStorage.getItem("session");
+		const getSession = httpsCallable(functions, "getSession");
+		getSession({ id }).
+			then((result) => { }).
+			catch((error) => {
+				console.error(error.code, error.message, error.details);
+				location.href = "/signin.html";
+			})
 	</script>
 
 	<!-- Header -->
