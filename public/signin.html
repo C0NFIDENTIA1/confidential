@@ -31,8 +31,11 @@
 
         const functions = getFunctions(app, "asia-northeast1");
         const form = document.getElementById("form");
+        const submit = document.getElementById("submit");
+        const err = document.getElementById("error");
         form.addEventListener("submit", (e) => {
             e.preventDefault();
+            submit.classList.add("disabled");
 
             const password = document.getElementById("password").value;
             const signin = httpsCallable(functions, "signin");
@@ -46,6 +49,12 @@
                 }).
                 catch((error) => {
                     console.error(error.code, error.message, error.details);
+                    submit.classList.remove("disabled");
+                    if (error.code === "invalid-password") {
+                        err.innerText = "パスワードが間違っています"
+                    } else {
+                        err.innerText = "ログインに失敗しました。何度も表示される場合は時間をおいて試してみてください"
+                    }
                 })
         })
     </script>
@@ -73,8 +82,9 @@
                     <div class="col-12">
                         <input type="password" name="password" id="password" />
                     </div>
+                    <sub id="error"></sub>
                     <div class="col-12">
-                        <input type="submit" value="sign in" class="primary" />
+                        <input type="submit" value="sign in" id="submit" class="primary" />
                     </div>
                 </div>
             </form>
