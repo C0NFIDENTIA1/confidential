@@ -50,7 +50,7 @@
                 catch((error) => {
                     console.error(error.code, error.message, error.details);
                     submit.classList.remove("disabled");
-                    if (error.code === "invalid-password") {
+                    if (error.code === "functions/invalid-argument") {
                         err.innerText = "パスワードが間違っています"
                     } else {
                         err.innerText = "ログインに失敗しました。何度も表示される場合は時間をおいて試してみてください"
