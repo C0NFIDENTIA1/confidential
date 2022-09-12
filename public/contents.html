@@ -37,12 +37,12 @@
 		const functions = getFunctions(app, "asia-northeast1");
 		const id = localStorage.getItem("session");
 		const getSession = httpsCallable(functions, "getSession");
-		// getSession({ id }).
-		// 	then((result) => { }).
-		// 	catch((error) => {
-		// 		console.error(error.code, error.message, error.details);
-		// 		location.href = "/index.html";
-		// 	})
+		getSession({ id }).
+			then((result) => { }).
+			catch((error) => {
+				console.error(error.code, error.message, error.details);
+				location.href = "/index.html";
+			})
 	</script>
 
 	<!-- Header -->
