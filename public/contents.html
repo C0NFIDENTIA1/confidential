@@ -37,12 +37,12 @@
 		const functions = getFunctions(app, "asia-northeast1");
 		const id = localStorage.getItem("session");
 		const getSession = httpsCallable(functions, "getSession");
-		getSession({ id }).
-			then((result) => { }).
-			catch((error) => {
-				console.error(error.code, error.message, error.details);
-				location.href = "/index.html";
-			})
+		// getSession({ id }).
+		// 	then((result) => { }).
+		// 	catch((error) => {
+		// 		console.error(error.code, error.message, error.details);
+		// 		location.href = "/index.html";
+		// 	})
 	</script>
 
 	<!-- Header -->
@@ -125,13 +125,13 @@
 				<table class="alt">
 					<tbody>
 						<tr>
-							<td class="tdHead">発行日</td>
+							<td class="td-head">発行日</td>
 							<td><b>2022年12月18日</b></td>
 						</tr>
 					</tbody>
 					<tbody>
 						<tr>
-							<td class="tdHead">イベント</td>
+							<td class="td-head">イベント</td>
 							<td>
 								<b>
 									COMIC CITY SPARK 17<br>
@@ -144,13 +144,13 @@
 					</tbody>
 					<tbody>
 						<tr>
-							<td class="tdHead">主催</td>
+							<td class="td-head">主催</td>
 							<td>翠花 <a href="https://twitter.com/RHP_Kakuri" class="icon brands fa-twitter"><span class="label">Twitter</span></a></td>
 						</tr>
 					</tbody>
 					<tbody>
 						<tr>
-							<td class="tdHead">告知用アカウント</td>
+							<td class="td-head">告知用アカウント</td>
 							<td>TGM🐓🥴アンソロ『You Look Good』 <a href="https://twitter.com/rshn_ylg" class="icon brands fa-twitter"><span class="label">Twitter</span></a></td>
 						</tr>
 					</tbody>
@@ -192,8 +192,8 @@
 					<li>
 						<h3>遊兎</h3><a href="https://twitter.com/Hyuuto_" target="_blank" rel="noopener noreferrer">twitter</a> / <a href="https://www.pixiv.net/users/9403234" target="_blank" rel="noopener noreferrer">pixiv</a>
 					</li>
-					<li>
-					</li>
+					<!-- <li>
+					</li> -->
 				</ul>
 				<h3>novel</h3>
 				<ul class="icons-grid">

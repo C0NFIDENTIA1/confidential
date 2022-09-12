@@ -3149,7 +3149,30 @@ input, select, textarea {
 
 	}
 
-	.tdHead{
+	.td-head{
 		background-color: #ebebeb;
 	}
+
+	#index .container{
+		margin: 100px auto;
+		padding-bottom: 3em;
+	}
+
+	.index-textarea{
+		padding: 20px;
+	}
+
+	#form .content{
+		padding: 20px;
+	}
+
+	.form-password{
+		display: block;
+		margin: 20px 25%;
+	}
+
+	.error-message{
+		color: #f07272;
+	}
+
 
