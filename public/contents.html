@@ -37,12 +37,12 @@
 		const functions = getFunctions(app, "asia-northeast1");
 		const id = localStorage.getItem("session");
 		const getSession = httpsCallable(functions, "getSession");
-		// getSession({ id }).
-		// 	then((result) => { }).
-		// 	catch((error) => {
-		// 		console.error(error.code, error.message, error.details);
-		// 		location.href = "/index.html";
-		// 	})
+		getSession({ id }).
+			then((result) => { }).
+			catch((error) => {
+				console.error(error.code, error.message, error.details);
+				location.href = "/index.html";
+			})
 	</script>
 
 	<!-- Header -->
@@ -58,7 +58,7 @@
 				制作・版権元各位とは一切関係ありません。<br>
 				18歳未満の方の閲覧はご遠慮ください。<br>
 				This site is unofficial by a private individual.<br>
-        Any similarity to actual persons, works, or production companies is unintentional.<br>
+				Any similarity to actual persons, works, or production companies is unintentional.<br>
 				Viewers must be 18 years of age or older to view content.
 			</sub>
 		</header>
@@ -109,7 +109,7 @@
 				<h2>「You Look Good」</h2>
 				<p>
 					<b>ルースター × ハングマン 非公式アンソロジー<br>
-					R-18（全年齢作品含む）</b>
+						R-18（全年齢作品含む）</b>
 				</p>
 				<span class="image fit primary"><img src="images/pic01.jpg" alt="" /></span>
 				<!-- <div class="box alt">
@@ -149,13 +149,15 @@
 					<tbody>
 						<tr>
 							<td class="td-head">主催</td>
-							<td>翠花 <a href="https://twitter.com/RHP_Kakuri" class="icon brands fa-twitter"><span class="label">Twitter</span></a></td>
+							<td>翠花 <a href="https://twitter.com/RHP_Kakuri" class="icon brands fa-twitter"><span
+										class="label">Twitter</span></a></td>
 						</tr>
 					</tbody>
 					<tbody>
 						<tr>
 							<td class="td-head">告知用アカウント</td>
-							<td>TGM🐓🥴アンソロ『You Look Good』 <a href="https://twitter.com/rshn_ylg" class="icon brands fa-twitter"><span class="label">Twitter</span></a></td>
+							<td>TGM🐓🥴アンソロ『You Look Good』 <a href="https://twitter.com/rshn_ylg"
+									class="icon brands fa-twitter"><span class="label">Twitter</span></a></td>
 						</tr>
 					</tbody>
 				</table>
@@ -176,52 +178,78 @@
 				<!-- <p>Consequat sed ultricies rutrum. Sed adipiscing eu amet interdum lorem blandit vis ac commodo aliquet vulputate.</p> -->
 				<ul class="icons-grid">
 					<li>
-						<h3>いもごはん</h3><a href="https://twitter.com/imorice_21" target="_blank" rel="noopener noreferrer">twitter</a>
+						<h3>いもごはん</h3><a href="https://twitter.com/imorice_21" target="_blank"
+							rel="noopener noreferrer">twitter</a>
 					</li>
 					<li>
-						<h3>ちよ子</h3><a href="https://twitter.com/61120choco" target="_blank" rel="noopener noreferrer">twitter</a> / <a href="https://poipiku.com/1245613/" target="_blank" rel="noopener noreferrer">poipiku</a>
+						<h3>ちよ子</h3><a href="https://twitter.com/61120choco" target="_blank"
+							rel="noopener noreferrer">twitter</a> / <a href="https://poipiku.com/1245613/"
+							target="_blank" rel="noopener noreferrer">poipiku</a>
 					</li>
 					<li>
-						<h3>ニハチ</h3><a href="https://twitter.com/nih_chi" target="_blank" rel="noopener noreferrer">twitter</a> / <a href="https://poipiku.com/5605827/" target="_blank" rel="noopener noreferrer">poipiku</a>
+						<h3>ニハチ</h3><a href="https://twitter.com/nih_chi" target="_blank"
+							rel="noopener noreferrer">twitter</a> / <a href="https://poipiku.com/5605827/"
+							target="_blank" rel="noopener noreferrer">poipiku</a>
 					</li>
 					<li>
-						<h3>hi</h3><a href="https://mobile.twitter.com/hi1210hi" target="_blank" rel="noopener noreferrer">twitter</a>
+						<h3>hi</h3><a href="https://mobile.twitter.com/hi1210hi" target="_blank"
+							rel="noopener noreferrer">twitter</a>
 					</li>
 					<li>
-						<h3>Halo</h3><a href="https://mobile.twitter.com/slow_great" target="_blank" rel="noopener noreferrer">twitter</a>
+						<h3>Halo</h3><a href="https://mobile.twitter.com/slow_great" target="_blank"
+							rel="noopener noreferrer">twitter</a>
 					</li>
 					<li>
-						<h3>MARU(まる)</h3><a href="https://twitter.com/maru_in_the_sky" target="_blank" rel="noopener noreferrer">twitter</a> / <a href="https://pictbland.net/marumouke" target="_blank" rel="noopener noreferrer">pictBLand</a>
+						<h3>MARU(まる)</h3><a href="https://twitter.com/maru_in_the_sky" target="_blank"
+							rel="noopener noreferrer">twitter</a> / <a href="https://pictbland.net/marumouke"
+							target="_blank" rel="noopener noreferrer">pictBLand</a>
 					</li>
 					<li>
-						<h3>遊兎</h3><a href="https://twitter.com/Hyuuto_" target="_blank" rel="noopener noreferrer">twitter</a> / <a href="https://www.pixiv.net/users/9403234" target="_blank" rel="noopener noreferrer">pixiv</a>
+						<h3>遊兎</h3><a href="https://twitter.com/Hyuuto_" target="_blank"
+							rel="noopener noreferrer">twitter</a> / <a href="https://www.pixiv.net/users/9403234"
+							target="_blank" rel="noopener noreferrer">pixiv</a>
 					</li>
 				</ul>
 				<h2 class="subtitle">novel</h2>
 				<ul class="icons-grid">
 					<li>
-						<h3>碓氷</h3><a href="https://twitter.com/Cest_Usui_MK" target="_blank" rel="noopener noreferrer">twitter</a> / <a href="https://www.pixiv.net/users/71194975" target="_blank" rel="noopener noreferrer">pixiv</a>
+						<h3>碓氷</h3><a href="https://twitter.com/Cest_Usui_MK" target="_blank"
+							rel="noopener noreferrer">twitter</a> / <a href="https://www.pixiv.net/users/71194975"
+							target="_blank" rel="noopener noreferrer">pixiv</a>
 					</li>
 					<li>
-						<h3>えいき</h3><a href="https://twitter.com/eik2gr" target="_blank" rel="noopener noreferrer">twitter</a> / <a href="https://pictbland.net/8ftako" target="_blank" rel="noopener noreferrer">pictBland</a>
+						<h3>えいき</h3><a href="https://twitter.com/eik2gr" target="_blank"
+							rel="noopener noreferrer">twitter</a> / <a href="https://pictbland.net/8ftako"
+							target="_blank" rel="noopener noreferrer">pictBland</a>
 					</li>
 					<li>
-						<h3>shima</h3><a href="https://twitter.com/shima00074" target="_blank" rel="noopener noreferrer">twitter</a>
+						<h3>shima</h3><a href="https://twitter.com/shima00074" target="_blank"
+							rel="noopener noreferrer">twitter</a>
 					</li>
 					<li>
-						<h3>たんぽぽ</h3><a href="https://twitter.com/sunny120920" target="_blank" rel="noopener noreferrer">twitter</a>
+						<h3>たんぽぽ</h3><a href="https://twitter.com/sunny120920" target="_blank"
+							rel="noopener noreferrer">twitter</a>
 					</li>
 					<li>
-						<h3>花枝おかる</h3><a href="https://twitter.com/okalunlun" target="_blank" rel="noopener noreferrer">twitter</a> / <a href="https://www.pixiv.net/users/16431866" target="_blank" rel="noopener noreferrer">pixiv</a>
+						<h3>花枝おかる</h3><a href="https://twitter.com/okalunlun" target="_blank"
+							rel="noopener noreferrer">twitter</a> / <a href="https://www.pixiv.net/users/16431866"
+							target="_blank" rel="noopener noreferrer">pixiv</a>
 					</li>
 					<li>
-						<h3>レン</h3><a href="https://twitter.com/ltp_flick" target="_blank" rel="noopener noreferrer">twitter</a> / <a href="https://pictbland.net/ltp_flick" target="_blank" rel="noopener noreferrer">pictBland</a>
+						<h3>レン</h3><a href="https://twitter.com/ltp_flick" target="_blank"
+							rel="noopener noreferrer">twitter</a> / <a href="https://pictbland.net/ltp_flick"
+							target="_blank" rel="noopener noreferrer">pictBland</a>
 					</li>
 					<li>
-						<h3>ろばすけ</h3><a href="https://twitter.com/sussurro7" target="_blank" rel="noopener noreferrer">twitter</a> / <a href="https://pictbland.net/sussurro7" target="_blank" rel="noopener noreferrer">pictBland</a> / <a href="https://www.tumblr.com/robasuke" target="_blank" rel="noopener noreferrer">tumblr</a>
+						<h3>ろばすけ</h3><a href="https://twitter.com/sussurro7" target="_blank"
+							rel="noopener noreferrer">twitter</a> / <a href="https://pictbland.net/sussurro7"
+							target="_blank" rel="noopener noreferrer">pictBland</a> / <a
+							href="https://www.tumblr.com/robasuke" target="_blank" rel="noopener noreferrer">tumblr</a>
 					</li>
 					<li>
-						<h3>翠花</h3><a href="https://twitter.com/rhp_kakuri" target="_blank" rel="noopener noreferrer">twitter</a> / <a href="https://pictbland.net/xD36sR5f" target="_blank" rel="noopener noreferrer">pictBland</a>
+						<h3>翠花</h3><a href="https://twitter.com/rhp_kakuri" target="_blank"
+							rel="noopener noreferrer">twitter</a> / <a href="https://pictbland.net/xD36sR5f"
+							target="_blank" rel="noopener noreferrer">pictBland</a>
 					</li>
 				</ul>
 				<div class="text-left">
