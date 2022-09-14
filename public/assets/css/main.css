@@ -3175,4 +3175,17 @@ input, select, textarea {
 		color: #f07272;
 	}
 
+	.subtitle{
+		color: #9ed8b6;
+		padding: 0.5em 1em;
+    margin: 2em 0;
+    font-weight: bold;
+    border: solid 2px #ebebeb;
+	}
+
+	.text-left{
+		text-align: left;
+		display: inline-block;
+	}
+
 
